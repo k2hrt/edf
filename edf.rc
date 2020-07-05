@@ -1,0 +1,150 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+EDFBOX DIALOGEX 0, 0, 177, 125
+STYLE DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | 
+    WS_THICKFRAME
+CAPTION "EDF"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Help",IDC_EDF_HELP,126,70,46,12
+    PUSHBUTTON      "C&opy",IDC_EDF_COPY,126,38,46,12
+    PUSHBUTTON      "Clo&se",IDC_EDF_CLOSE,126,22,46,12
+    PUSHBUTTON      "&Calc",IDC_EDF_CALC,126,6,46,12
+    LTEXT           "&Variance Type:",IDC_STATIC,4,7,58,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_EDF_VARIANCE,65,6,48,86,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Noise Type:",IDC_STATIC,4,23,58,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_EDF_NOISE,65,22,48,72,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "# &Data Points:",IDC_STATIC,4,39,58,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDF_NUM,65,38,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Averaging Factor:",IDC_STATIC,4,56,58,11,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDF_AF,65,55,48,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Type",IDC_STATIC,2,70,56,50,WS_GROUP
+    CONTROL         "Origina&l",IDC_EDF_OLDTYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,12,79,39,10
+    CONTROL         "F&ull",IDC_EDF_FULLTYPE,"Button",BS_AUTORADIOBUTTON,12,
+                    92,27,10
+    CONTROL         "S&imple",IDC_EDF_SIMPLETYPE,"Button",BS_AUTORADIOBUTTON,
+                    12,106,37,10
+    GROUPBOX        "Stride",IDC_STATIC,64,70,50,34,WS_GROUP
+    CONTROL         "Lon&g",IDC_EDF_LONGSTRIDE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,70,80,31,10
+    CONTROL         "Shor&t",IDC_EDF_SHORTSTRIDE,"Button",BS_AUTORADIOBUTTON,
+                    70,93,32,10
+    ICON            "EDFICON",IDC_STATIC,140,87,20,20
+    LTEXT           "EDF:",IDC_STATIC,67,109,23,11,SS_CENTERIMAGE
+    LTEXT           "",IDC_EDF_EDF,96,108,76,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Vie&w",IDC_EDF_VIEW,126,54,46,12
+END
+
+ABOUTBOX DIALOGEX 0, 0, 151, 91
+STYLE DS_MODALFRAME | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About EDF"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Close",IDCANCEL,50,75,46,12
+    CTEXT           "EDF Calculator",IDC_STATIC,12,6,126,18,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "Version 1.4 of 7/16/03\n© 2003 Hamilton Technical Services",
+                    IDC_STATIC,32,53,112,18
+    ICON            "EDFICON",IDC_STATIC,13,53,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    "EDFBOX", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+EDFICON                 ICON    DISCARDABLE     "edf.ico"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
